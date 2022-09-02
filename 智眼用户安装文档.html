@@ -757,741 +757,72 @@ p { margin-bottom: 1.25rem; }
 <div id="toc" class="toc2">
 <div id="toctitle">目录</div>
 <ul class="sectlevel1">
-<li><a href="#_centos6">1. CentOS6</a>
+<li><a href="#_centos">1. CentOS</a>
 <ul class="sectlevel2">
-<li><a href="#_关闭selinux">1.1. 关闭SELINUX</a></li>
-<li><a href="#_安装仓库">1.2. 安装仓库</a></li>
-<li><a href="#_生成yum缓存">1.3. 生成yum缓存</a></li>
-<li><a href="#_安装智眼服务端">1.4. 安装智眼服务端</a>
+<li><a href="#_关闭selinux与防火墙">1.1. 关闭SELINUX与防火墙</a></li>
+<li><a href="#_通过命令安装仓库在根目录下运行">1.2. 通过命令安装仓库（在根目录下运行）</a>
 <ul class="sectlevel3">
-<li><a href="#_安装_zhiyan_web">1.4.1. 安装 zhiyan-web</a></li>
-<li><a href="#_安装_zhiyan_web_server">1.4.2. 安装 zhiyan-web-server</a></li>
-<li><a href="#_安装_zhiyan_server">1.4.3. 安装 zhiyan-server</a></li>
+<li><a href="#_install_centos6_repository">1.2.1. Install CentOS6 Repository</a></li>
+<li><a href="#_install_centos7_repository">1.2.2. Install CentOS7 Repository</a></li>
+<li><a href="#_install_centos_stream_repository">1.2.3. Install CentOS stream Repository</a></li>
+<li><a href="#_生成yum缓存">1.2.4. 生成yum缓存</a></li>
 </ul>
 </li>
-<li><a href="#_安装智眼客户端">1.5. 安装智眼客户端</a>
+<li><a href="#_安装智眼">1.3. 安装智眼</a>
 <ul class="sectlevel3">
-<li><a href="#_安装_zhiyan_db">1.5.1. 安装 zhiyan-db</a></li>
-<li><a href="#_安装_zhiyan_agent">1.5.2. 安装 zhiyan-agent</a></li>
-<li><a href="#_安装_python_lib库">1.5.3. 安装 python lib库</a></li>
-<li><a href="#_安装_zhiyan_module">1.5.4. 安装 zhiyan-module</a></li>
+<li><a href="#_服务端组">1.3.1. 服务端组</a></li>
+<li><a href="#_客户端组">1.3.2. 客户端组</a></li>
 </ul>
 </li>
-<li><a href="#_使用">1.6. 使用</a>
+<li><a href="#_使用">1.4. 使用</a>
 <ul class="sectlevel3">
-<li><a href="#_运行智眼脚本">1.6.1. 运行智眼脚本</a></li>
-</ul>
-</li>
-<li><a href="#_系统命令管理服务端">1.7. 系统命令管理服务端</a></li>
-<li><a href="#_系统命令管理客户端">1.8. 系统命令管理客户端</a></li>
-<li><a href="#_服务端日志文件以及配置文件路径">1.9. 服务端日志文件以及配置文件路径</a>
-<ul class="sectlevel3">
-<li><a href="#_zhiyan_web_server">1.9.1. zhiyan-web-server</a></li>
-<li><a href="#_zhiyan_server">1.9.2. zhiyan-server</a></li>
-</ul>
-</li>
-<li><a href="#_客户端日志文件以及配置文件路径">1.10. 客户端日志文件以及配置文件路径</a>
-<ul class="sectlevel3">
-<li><a href="#_zhiyn_agent">1.10.1. zhiyn-agent</a></li>
-<li><a href="#_zhiyan_module">1.10.2. zhiyan-module</a></li>
+<li><a href="#_运行智眼脚本">1.4.1. 运行智眼脚本</a></li>
+<li><a href="#_访问网页">1.4.2. 访问网页</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_centos7">2. CentOS7</a>
+<li><a href="#_ubuntu">2. Ubuntu</a>
 <ul class="sectlevel2">
-<li><a href="#_关闭selinux与防火墙">2.1. 关闭SELINUX与防火墙</a></li>
-<li><a href="#_安装仓库_2">2.2. 安装仓库</a></li>
-<li><a href="#_生成yum缓存_2">2.3. 生成yum缓存</a></li>
-<li><a href="#_安装智眼服务端_2">2.4. 安装智眼服务端</a>
+<li><a href="#_安装仓库">2.1. 安装仓库</a>
 <ul class="sectlevel3">
-<li><a href="#_安装_zhiyan_web_2">2.4.1. 安装 zhiyan-web</a></li>
-<li><a href="#_安装_zhiyan_web_server_2">2.4.2. 安装 zhiyan-web-server</a></li>
-<li><a href="#_安装_zhiyan_server_2">2.4.3. 安装 zhiyan-server</a></li>
+<li><a href="#_获取仓库服务器公钥并添加至apt_key中">2.1.1. 获取仓库服务器公钥并添加至apt-key中</a></li>
+<li><a href="#_install_ubuntu16_04_repository">2.1.2. Install Ubuntu16.04 Repository</a></li>
+<li><a href="#_install_ubuntu18_04_repository">2.1.3. Install Ubuntu18.04 Repository</a></li>
+<li><a href="#_install_ubuntu22_04_repository">2.1.4. Install Ubuntu22.04 Repository</a></li>
+<li><a href="#_更新仓库索引">2.1.5. 更新仓库索引</a></li>
 </ul>
 </li>
-<li><a href="#_安装智眼客户端_2">2.5. 安装智眼客户端</a>
+<li><a href="#_安装智眼_2">2.2. 安装智眼</a>
 <ul class="sectlevel3">
-<li><a href="#_安装_zhiyan_db_2">2.5.1. 安装 zhiyan-db</a></li>
-<li><a href="#_安装_zhiyan_agent_2">2.5.2. 安装 zhiyan-agent</a></li>
-<li><a href="#_安装_python_lib库_2">2.5.3. 安装 python lib库</a></li>
-<li><a href="#_安装_zhiyan_module_2">2.5.4. 安装 zhiyan-module</a></li>
+<li><a href="#_服务端组_2">2.2.1. 服务端组</a></li>
+<li><a href="#_客户端组_2">2.2.2. 客户端组</a></li>
 </ul>
 </li>
-<li><a href="#_使用_2">2.6. 使用</a>
+<li><a href="#_使用_2">2.3. 使用</a>
 <ul class="sectlevel3">
-<li><a href="#_运行智眼脚本_2">2.6.1. 运行智眼脚本</a></li>
-</ul>
-</li>
-<li><a href="#_系统命令管理服务端_2">2.7. 系统命令管理服务端</a></li>
-<li><a href="#_系统命令管理客户端_2">2.8. 系统命令管理客户端</a></li>
-<li><a href="#_服务端日志文件以及配置文件路径_2">2.9. 服务端日志文件以及配置文件路径</a>
-<ul class="sectlevel3">
-<li><a href="#_zhiyan_web_server_2">2.9.1. zhiyan-web-server</a></li>
-<li><a href="#_zhiyan_server_2">2.9.2. zhiyan-server</a></li>
-</ul>
-</li>
-<li><a href="#_客户端日志文件以及配置文件路径_2">2.10. 客户端日志文件以及配置文件路径</a>
-<ul class="sectlevel3">
-<li><a href="#_zhiyn_agent_2">2.10.1. zhiyn-agent</a></li>
-<li><a href="#_zhiyan_module_2">2.10.2. zhiyan-module</a></li>
+<li><a href="#_运行智眼脚本_2">2.3.1. 运行智眼脚本</a></li>
+<li><a href="#_访问网页_2">2.3.2. 访问网页</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_ubuntu16_04">3. Ubuntu16.04</a></li>
-<li><a href="#_ubuntu18_04">4. Ubuntu18.04</a></li>
-<li><a href="#_ubuntu22_04">5. Ubuntu22.04</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_centos6">1. CentOS6</h2>
+<h2 id="_centos">1. CentOS</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_关闭selinux">1.1. 关闭SELINUX</h3>
+<h3 id="_关闭selinux与防火墙">1.1. 关闭SELINUX与防火墙</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">echo SELINUX=disabled&gt;/etc/selinux/config
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">#禁用SELINUX，必须重启才能生效
+echo SELINUX=disabled&gt;/etc/selinux/config
 echo SELINUXTYPE=targeted&gt;&gt;/etc/selinux/config</code></pre>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_安装仓库">1.2. 安装仓库</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y https://packages.cdgeekcamp.com/zhiyan/el/6/x86_64/gc-zy-release-latest-6.x86_64.rpm</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>确认仓库是否存在：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum repolist | grep gc-zy</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示仓库安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum repolist | grep gc-zy
-gc-zy                    gc-zy                                                25</pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_生成yum缓存">1.3. 生成yum缓存</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum clean all &amp;&amp; yum makecache</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_安装智眼服务端">1.4. 安装智眼服务端</h3>
-<div class="sect3">
-<h4 id="_安装_zhiyan_web">1.4.1. 安装 zhiyan-web</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-web</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-web安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-web
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-web.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-web.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_zhiyan_web_server">1.4.2. 安装 zhiyan-web-server</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-web-server</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-web-server安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-web-server
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-web-server.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-web-server.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_zhiyan_server">1.4.3. 安装 zhiyan-server</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-server</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-server安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-server
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-server.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-server.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_安装智眼客户端">1.5. 安装智眼客户端</h3>
-<div class="sect3">
-<h4 id="_安装_zhiyan_db">1.5.1. 安装 zhiyan-db</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-db-12-libs gc-zy-db-12 gc-zy-db-12-server</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-db安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-db-12-libs gc-zy-db-12 gc-zy-db-12-server
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-db-12.x86_64.0.12.11-2PGDG.el7 将被 安装
----&gt; 软件包 gc-zy-db-12-libs.x86_64.0.12.11-2PGDG.el7 将被 安装
----&gt; 软件包 gc-zy-db-12-server.x86_64.0.12.11-2PGDG.el7 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-db-12.x86_64 0:12.11-2PGDG.el7            gc-zy-db-12-libs.x86_64 0:12.11-2PGDG.el7
-  gc-zy-db-12-server.x86_64 0:12.11-2PGDG.el7
-
-完毕！</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_zhiyan_agent">1.5.2. 安装 zhiyan-agent</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-agent</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-agent安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-agent
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-agent.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-agent.x86_64 0:0.0.1.0-1
-
-完毕</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_python_lib库">1.5.3. 安装 python lib库</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-libzygrpc-python gc-zy-libzymod-python</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示python lib库安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-libzygrpc-python gc-zy-libzymod-python
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-libzygrpc-python.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-libzymod-python.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-libzygrpc-python.x86_64 0:0.0.1.0-1       gc-zy-libzymod-python.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_zhiyan_module">1.5.4. 安装 zhiyan-module</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-mod-bandwidth gc-zy-mod-cpu gc-zy-mod-dns gc-zy-mod-processes gc-zy-mod-network-address gc-zy-mod-filesystem gc-zy-mod-hostname gc-zy-mod-io gc-zy-mod-load gc-zy-mod-memory gc-zy-mod-network gc-zy-mod-network-route gc-zy-mod-swap gc-zy-mod-tasks gc-zy-mod-uptime</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-module安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-mod-bandwidth gc-zy-mod-cpu gc-zy-mod-dns gc-zy-mod-processes gc-zy-mod-network-address gc-zy-mod-filesystem gc-zy-mod-hostname gc-zy-mod-io gc-zy-mod-load gc-zy-mod-memory gc-zy-mod-network gc-zy-mod-network-route gc-zy-mod-swap gc-zy-mod-tasks gc-zy-mod-uptime
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-mod-bandwidth.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-cpu.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-dns.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-filesystem.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-hostname.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-io.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-load.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-memory.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-network.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-network-address.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-network-route.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-processes.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-swap.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-tasks.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-uptime.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-mod-bandwidth.x86_64 0:0.0.1.0-1        gc-zy-mod-cpu.x86_64 0:0.0.1.0-1
-  gc-zy-mod-dns.x86_64 0:0.0.1.0-1              gc-zy-mod-filesystem.x86_64 0:0.0.1.0-1
-  gc-zy-mod-hostname.x86_64 0:0.0.1.0-1         gc-zy-mod-io.x86_64 0:0.0.1.0-1
-  gc-zy-mod-load.x86_64 0:0.0.1.0-1             gc-zy-mod-memory.x86_64 0:0.0.1.0-1
-  gc-zy-mod-network.x86_64 0:0.0.1.0-1          gc-zy-mod-network-address.x86_64 0:0.0.1.0-1
-  gc-zy-mod-network-route.x86_64 0:0.0.1.0-1    gc-zy-mod-processes.x86_64 0:0.0.1.0-1
-  gc-zy-mod-swap.x86_64 0:0.0.1.0-1             gc-zy-mod-tasks.x86_64 0:0.0.1.0-1
-  gc-zy-mod-uptime.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_使用">1.6. 使用</h3>
-<div class="sect3">
-<h4 id="_运行智眼脚本">1.6.1. 运行智眼脚本</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sh /opt/gc/zy/bin/gc-zy-init</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>访问网页：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>http://localhost:6222</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>默认帐号密码：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>帐号：admin
-
-密码：zhiyan</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_系统命令管理服务端">1.7. 系统命令管理服务端</h3>
-<div class="paragraph">
-<p>zhiyan-web-server</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-web-server
-chkconfig gc-zy-web-server on
-service gc-zy-web-server restart
-service gc-zy-web-server stop
-service gc-zy-web-server status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-server</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-server
-chkconfig gc-zy-server on
-service gc-zy-server restart
-service gc-zy-server stop
-service gc-zy-server status</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_系统命令管理客户端">1.8. 系统命令管理客户端</h3>
-<div class="paragraph">
-<p>zhiyan-agent</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-agent
-chkconfig gc-zy-agent on
-service gc-zy-agent restart
-service gc-zy-agent stop
-service gc-zy-agent status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-bandwidth</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-bandwidth
-chkconfig gc-zy-mod-bandwidth on
-service gc-zy-mod-bandwidth restart
-service gc-zy-mod-bandwidth stop
-service gc-zy-mod-bandwidth status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-cpu</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-cpu
-chkconfig gc-zy-mod-cpu on
-service gc-zy-mod-cpu restart
-service gc-zy-mod-cpu stop
-service gc-zy-mod-cpu status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-dns</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-dns
-chkconfig gc-zy-mod-dns on
-service gc-zy-mod-dns restart
-service gc-zy-mod-dns stop
-service gc-zy-mod-dns status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-hostname</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-hostname
-chkconfig gc-zy-mod-hostname on
-service gc-zy-mod-hostname restart
-service gc-zy-mod-hostname stop
-service gc-zy-mod-hostname status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-io</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-io
-chkconfig gc-zy-mod-io on
-service gc-zy-mod-io restart
-service gc-zy-mod-io stop
-service gc-zy-mod-io status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-memory</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-memory
-chkconfig gc-zy-mod-memory on
-service gc-zy-mod-memory restart
-service gc-zy-mod-memory stop
-service gc-zy-mod-memory status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-processes</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-processes
-chkconfig gc-zy-mod-processes on
-service gc-zy-mod-processes restart
-service gc-zy-mod-processes stop
-service gc-zy-mod-processes status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-swap</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-swap
-chkconfig gc-zy-mod-swap on
-service gc-zy-mod-swap restart
-service gc-zy-mod-swap stop
-service gc-zy-mod-swap status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-tasks</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-tasks
-chkconfig gc-zy-mod-tasks on
-service gc-zy-mod-tasks restart
-service gc-zy-mod-tasks stop
-service gc-zy-mod-tasks status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-uptime</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-uptime
-chkconfig gc-zy-mod-uptime on
-service gc-zy-mod-uptime restart
-service gc-zy-mod-uptime stop
-service gc-zy-mod-uptime status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-network-route</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-network-route
-chkconfig gc-zy-mod-network-route on
-service gc-zy-mod-network-route restart
-service gc-zy-mod-network-route stop
-service gc-zy-mod-network-route status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-filesystem</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-filesystem
-chkconfig gc-zy-mod-filesystem on
-service gc-zy-mod-filesystem restart
-service gc-zy-mod-filesystem stop
-service gc-zy-mod-filesystem status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-network-address</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-network-address
-chkconfig gc-zy-mod-network-address on
-service gc-zy-mod-network-address restart
-service gc-zy-mod-network-address stop
-service gc-zy-mod-network-address status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-load</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-load
-chkconfig gc-zy-mod-load on
-service gc-zy-mod-load restart
-service gc-zy-mod-load stop
-service gc-zy-mod-load status</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-network</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">chkconfig --add gc-zy-mod-network
-chkconfig gc-zy-mod-network on
-service gc-zy-mod-network restart
-service gc-zy-mod-network stop
-service gc-zy-mod-network status</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_服务端日志文件以及配置文件路径">1.9. 服务端日志文件以及配置文件路径</h3>
-<div class="sect3">
-<h4 id="_zhiyan_web_server">1.9.1. zhiyan-web-server</h4>
-<div class="paragraph">
-<p>zhiyan-web-server日志文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/var/log/zy/web-server.log</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-web-server配置文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/opt/gc/zy/etc/web-server.logback.xml
-/opt/gc/zy/etc/web-server.properties</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_zhiyan_server">1.9.2. zhiyan-server</h4>
-<div class="paragraph">
-<p>zhiyan-server日志文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/var/log/zy/server.log</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-server配置文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/opt/gc/zy/etc/server.conf
-/opt/gc/zy/etc/server.log.yaml</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_客户端日志文件以及配置文件路径">1.10. 客户端日志文件以及配置文件路径</h3>
-<div class="sect3">
-<h4 id="_zhiyn_agent">1.10.1. zhiyn-agent</h4>
-<div class="paragraph">
-<p>zhiyan-agent日志文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/var/log/zy/agent.log</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-agent配置文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/opt/gc/zy/etc/agent.conf
-/opt/gc/zy/etc/agent.log.yaml</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_zhiyan_module">1.10.2. zhiyan-module</h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1499,42 +830,10 @@ service gc-zy-mod-network status</code></pre>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Python模块的配置文件只有一个：/opt/gc/zy/etc/*.conf，Python模块有：gc-zy-mod-filesystem，gc-zy-mod-processes，gc-zy-mod-network-address
+CentOS6没有防火墙，下面关闭防火墙命令可以不用执行
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>zhiyan-module日志文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/var/log/zy/*.log</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-module配置文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/opt/gc/zy/etc/*.conf
-/opt/gc/zy/etc/*.log.yaml</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_centos7">2. CentOS7</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_关闭selinux与防火墙">2.1. 关闭SELINUX与防火墙</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">echo SELINUX=disabled&gt;/etc/selinux/config
-echo SELINUXTYPE=targeted&gt;&gt;/etc/selinux/config</code></pre>
-</div>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1544,333 +843,124 @@ echo SELINUXTYPE=targeted&gt;&gt;/etc/selinux/config</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_安装仓库_2">2.2. 安装仓库</h3>
+<h3 id="_通过命令安装仓库在根目录下运行">1.2. 通过命令安装仓库（在根目录下运行）</h3>
+<div class="sect3">
+<h4 id="_install_centos6_repository">1.2.1. Install CentOS6 Repository</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y ca-certificates
+
+yum install -y https://packages.cdgeekcamp.com/zhiyan/el/6/x86_64/gc-zy-release-latest-6.x86_64.rpm</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_centos7_repository">1.2.2. Install CentOS7 Repository</h4>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y https://packages.cdgeekcamp.com/zhiyan/el/7/x86_64/gc-zy-release-latest-7.x86_64.rpm</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>确认仓库是否存在：</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum repolist | grep gc-zy</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示仓库安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum repolist | grep gc-zy
-gc-zy                    gc-zy                                                25</pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_生成yum缓存_2">2.3. 生成yum缓存</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum clean all &amp;&amp; yum makecache</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_安装智眼服务端_2">2.4. 安装智眼服务端</h3>
 <div class="sect3">
-<h4 id="_安装_zhiyan_web_2">2.4.1. 安装 zhiyan-web</h4>
+<h4 id="_install_centos_stream_repository">1.2.3. Install CentOS stream Repository</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-web</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y https://packages.cdgeekcamp.com/zhiyan/el/stream/x86_64/gc-zy-release-latest-stream.x86_64.rpm</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-web安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-web
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-web.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-web.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果在 <code>CentOS stream</code> 上安装，发现缺少 <code>gc-zy-db</code> 包，请执行 <code>sudo dnf module disable postgresql</code> ，然后重新生成 <code>yum</code> 缓存
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_安装_zhiyan_web_server_2">2.4.2. 安装 zhiyan-web-server</h4>
+<h4 id="_生成yum缓存">1.2.4. 生成yum缓存</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-web-server</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-web-server安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-web-server
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-web-server.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-web-server.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_zhiyan_server_2">2.4.3. 安装 zhiyan-server</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-server</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-server安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-server
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-server.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-server.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum makecache</code></pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_安装智眼客户端_2">2.5. 安装智眼客户端</h3>
-<div class="sect3">
-<h4 id="_安装_zhiyan_db_2">2.5.1. 安装 zhiyan-db</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-db-12-libs gc-zy-db-12 gc-zy-db-12-server</code></pre>
-</div>
+<h3 id="_安装智眼">1.3. 安装智眼</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>CentOS6 仓库设置请看这里，请查看  <a href="#_install_centos6_repository">Install CentOS6 Repository</a></p>
 </div>
 <div class="paragraph">
-<p>如有以下输出就表示zhiyan-db安装成功：</p>
+<p>CentOS7 仓库设置请看这里，请查看  <a href="#_install_centos7_repository">Install CentOS7 Repository</a></p>
 </div>
+<div class="paragraph">
+<p>CentOS stream 仓库设置请看这里，请查看  <a href="#_install_centos_stream_repository">Install CentOS stream Repository</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_服务端组">1.3.1. 服务端组</h4>
 <div class="listingblock">
 <div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-db-12-libs gc-zy-db-12 gc-zy-db-12-server
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-db-12.x86_64.0.12.11-2PGDG.el7 将被 安装
----&gt; 软件包 gc-zy-db-12-libs.x86_64.0.12.11-2PGDG.el7 将被 安装
----&gt; 软件包 gc-zy-db-12-server.x86_64.0.12.11-2PGDG.el7 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-db-12.x86_64 0:12.11-2PGDG.el7            gc-zy-db-12-libs.x86_64 0:12.11-2PGDG.el7
-  gc-zy-db-12-server.x86_64 0:12.11-2PGDG.el7
-
-完毕！</pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum groupinstall -y  'zhiyan server'</code></pre>
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_安装_zhiyan_agent_2">2.5.2. 安装 zhiyan-agent</h4>
+<h4 id="_客户端组">1.3.2. 客户端组</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-agent</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-agent安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-agent
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-agent.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-agent.x86_64 0:0.0.1.0-1
-
-完毕</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_python_lib库_2">2.5.3. 安装 python lib库</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-libzygrpc-python gc-zy-libzymod-python</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示python lib库安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-libzygrpc-python gc-zy-libzymod-python
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-libzygrpc-python.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-libzymod-python.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-libzygrpc-python.x86_64 0:0.0.1.0-1       gc-zy-libzymod-python.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_安装_zhiyan_module_2">2.5.4. 安装 zhiyan-module</h4>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum install -y gc-zy-mod-bandwidth gc-zy-mod-cpu gc-zy-mod-dns gc-zy-mod-processes gc-zy-mod-network-address gc-zy-mod-filesystem gc-zy-mod-hostname gc-zy-mod-io gc-zy-mod-load gc-zy-mod-memory gc-zy-mod-network gc-zy-mod-network-route gc-zy-mod-swap gc-zy-mod-tasks gc-zy-mod-uptime</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如有以下输出就表示zhiyan-module安装成功：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>[root@localhost ~]# yum install -y gc-zy-mod-bandwidth gc-zy-mod-cpu gc-zy-mod-dns gc-zy-mod-processes gc-zy-mod-network-address gc-zy-mod-filesystem gc-zy-mod-hostname gc-zy-mod-io gc-zy-mod-load gc-zy-mod-memory gc-zy-mod-network gc-zy-mod-network-route gc-zy-mod-swap gc-zy-mod-tasks gc-zy-mod-uptime
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.aliyun.com
- * centos-sclo-rh: mirrors.huaweicloud.com
- * centos-sclo-sclo: mirrors.huaweicloud.com
- * epel: mirrors.bfsu.edu.cn
- * extras: mirrors.huaweicloud.com
- * updates: mirrors.aliyun.com
-正在解决依赖关系
---&gt; 正在检查事务
----&gt; 软件包 gc-zy-mod-bandwidth.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-cpu.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-dns.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-filesystem.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-hostname.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-io.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-load.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-memory.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-network.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-network-address.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-network-route.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-processes.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-swap.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-tasks.x86_64.0.0.0.1.0-1 将被 安装
----&gt; 软件包 gc-zy-mod-uptime.x86_64.0.0.0.1.0-1 将被 安装
---&gt; 解决依赖关系完成
-
-........
-........
-
-已安装:
-  gc-zy-mod-bandwidth.x86_64 0:0.0.1.0-1        gc-zy-mod-cpu.x86_64 0:0.0.1.0-1
-  gc-zy-mod-dns.x86_64 0:0.0.1.0-1              gc-zy-mod-filesystem.x86_64 0:0.0.1.0-1
-  gc-zy-mod-hostname.x86_64 0:0.0.1.0-1         gc-zy-mod-io.x86_64 0:0.0.1.0-1
-  gc-zy-mod-load.x86_64 0:0.0.1.0-1             gc-zy-mod-memory.x86_64 0:0.0.1.0-1
-  gc-zy-mod-network.x86_64 0:0.0.1.0-1          gc-zy-mod-network-address.x86_64 0:0.0.1.0-1
-  gc-zy-mod-network-route.x86_64 0:0.0.1.0-1    gc-zy-mod-processes.x86_64 0:0.0.1.0-1
-  gc-zy-mod-swap.x86_64 0:0.0.1.0-1             gc-zy-mod-tasks.x86_64 0:0.0.1.0-1
-  gc-zy-mod-uptime.x86_64 0:0.0.1.0-1
-
-完毕！</pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">yum groupinstall -y  'zhiyan agent'</code></pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_使用_2">2.6. 使用</h3>
+<h3 id="_使用">1.4. 使用</h3>
 <div class="sect3">
-<h4 id="_运行智眼脚本_2">2.6.1. 运行智眼脚本</h4>
+<h4 id="_运行智眼脚本">1.4.1. 运行智眼脚本</h4>
+<div class="paragraph">
+<p>获取服务端 <code>token</code> ：</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sh /opt/gc/zy/bin/gc-zy-init</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sh /opt/gc/zy/bin/gc-zy-server-init 0.0.0.0</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>访问网页：</p>
+<p>将从服务端获取的 <code>token</code> 填入客户端：</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sh /opt/gc/zy/bin/gc-zy-agent-init token</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>启动智眼模块：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sh /opt/gc/zy/bin/gc-zy-start</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_访问网页">1.4.2. 访问网页</h4>
 <div class="listingblock">
 <div class="content">
 <pre>http://localhost:6222</pre>
@@ -1888,295 +978,20 @@ Loading mirror speeds from cached hostfile
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ubuntu">2. Ubuntu</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_系统命令管理服务端_2">2.7. 系统命令管理服务端</h3>
-<div class="paragraph">
-<p>zhiyan-web-server</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-web-server
-systemctl  start gc-zy-web-server
-systemctl  status gc-zy-web-server
-systemctl  restart gc-zy-web-server
-systemctl  stop gc-zy-web-server</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-server</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-server
-systemctl  start gc-zy-server
-systemctl  status gc-zy-server
-systemctl  restart gc-zy-server
-systemctl  stop gc-zy-server</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_系统命令管理客户端_2">2.8. 系统命令管理客户端</h3>
-<div class="paragraph">
-<p>zhiyan-agent</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-agent
-systemctl  start gc-zy-agent
-systemctl  status gc-zy-agent
-systemctl  restart gc-zy-agent
-systemctl  stop gc-zy-agent</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-bandwidth</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-bandwidth
-systemctl  start gc-zy-mod-bandwidth
-systemctl  status gc-zy-mod-bandwidth
-systemctl  restart gc-zy-mod-bandwidth
-systemctl  stop gc-zy-mod-bandwidth</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-cpu</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-cpu
-systemctl  start gc-zy-mod-cpu
-systemctl  status gc-zy-mod-cpu
-systemctl  restart gc-zy-mod-cpu
-systemctl  stop gc-zy-mod-cpu</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-dns</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-dns
-systemctl  start gc-zy-mod-dns
-systemctl  status gc-zy-mod-dns
-systemctl  restart gc-zy-mod-dns
-systemctl  stop gc-zy-mod-dns</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-hostname</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-hostname
-systemctl  start gc-zy-mod-hostname
-systemctl  status gc-zy-mod-hostname
-systemctl  restart gc-zy-mod-hostname
-systemctl  stop gc-zy-mod-hostname</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-io</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-io
-systemctl  start gc-zy-mod-io
-systemctl  status gc-zy-mod-io
-systemctl  restart gc-zy-mod-io
-systemctl  stop gc-zy-mod-io</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-memory</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-memory
-systemctl  start gc-zy-mod-memory
-systemctl  status gc-zy-mod-memory
-systemctl  restart gc-zy-mod-memory
-systemctl  stop gc-zy-mod-memory</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-processes</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-processes
-systemctl  start gc-zy-mod-processes
-systemctl  status gc-zy-mod-processes
-systemctl  restart gc-zy-mod-processes
-systemctl  stop gc-zy-mod-processes</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-swap</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-swap
-systemctl  start gc-zy-mod-swap
-systemctl  status gc-zy-mod-swap
-systemctl  restart gc-zy-mod-swap
-systemctl  stop gc-zy-mod-swap</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-tasks</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-tasks
-systemctl  start gc-zy-mod-tasks
-systemctl  status gc-zy-mod-tasks
-systemctl  restart gc-zy-mod-tasks
-systemctl  stop gc-zy-mod-tasks</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-uptime</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-uptime
-systemctl  start gc-zy-mod-uptime
-systemctl  status gc-zy-mod-uptime
-systemctl  restart gc-zy-mod-uptime
-systemctl  stop gc-zy-mod-uptime</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-network-route</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-network-route
-systemctl  start gc-zy-mod-network-route
-systemctl  status gc-zy-mod-network-route
-systemctl  restart gc-zy-mod-network-route
-systemctl  stop gc-zy-mod-network-route</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-filesystem</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-filesystem
-systemctl  start gc-zy-mod-filesystem
-systemctl  status gc-zy-mod-filesystem
-systemctl  restart gc-zy-mod-filesystem
-systemctl  stop gc-zy-mod-filesystem</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-network-address</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-network-address
-systemctl  start gc-zy-mod-network-address
-systemctl  status gc-zy-mod-network-address
-systemctl  restart gc-zy-mod-network-address
-systemctl  stop gc-zy-mod-network-address</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-load</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-load
-systemctl  start gc-zy-mod-load
-systemctl  status gc-zy-mod-load
-systemctl  restart gc-zy-mod-load
-systemctl  stop gc-zy-mod-load</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-mod-network</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">systemctl  enable gc-zy-mod-network
-systemctl  start gc-zy-mod-network
-systemctl  status gc-zy-mod-network
-systemctl  restart gc-zy-mod-network
-systemctl  stop gc-zy-mod-network</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_服务端日志文件以及配置文件路径_2">2.9. 服务端日志文件以及配置文件路径</h3>
+<h3 id="_安装仓库">2.1. 安装仓库</h3>
 <div class="sect3">
-<h4 id="_zhiyan_web_server_2">2.9.1. zhiyan-web-server</h4>
-<div class="paragraph">
-<p>zhiyan-web-server日志文件路径：</p>
-</div>
+<h4 id="_获取仓库服务器公钥并添加至apt_key中">2.1.1. 获取仓库服务器公钥并添加至apt-key中</h4>
 <div class="listingblock">
 <div class="content">
-<pre>/var/log/zy/web-server.log</pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">curl https://packages.cdgeekcamp.com/zhiyan/ubuntu/GC_ZHIYAN_REPO_UBUNTU.pub | sudo apt-key add -</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>zhiyan-web-server配置文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/opt/gc/zy/etc/web-server.logback.xml
-/opt/gc/zy/etc/web-server.properties</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_zhiyan_server_2">2.9.2. zhiyan-server</h4>
-<div class="paragraph">
-<p>zhiyan-server日志文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/var/log/zy/server.log</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-server配置文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/opt/gc/zy/etc/server.conf
-/opt/gc/zy/etc/server.log.yaml</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_客户端日志文件以及配置文件路径_2">2.10. 客户端日志文件以及配置文件路径</h3>
-<div class="sect3">
-<h4 id="_zhiyn_agent_2">2.10.1. zhiyn-agent</h4>
-<div class="paragraph">
-<p>zhiyan-agent日志文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/var/log/zy/agent.log</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>zhiyan-agent配置文件路径：</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>/opt/gc/zy/etc/agent.conf
-/opt/gc/zy/etc/agent.log.yaml</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_zhiyan_module_2">2.10.2. zhiyan-module</h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2184,54 +999,193 @@ systemctl  stop gc-zy-mod-network</code></pre>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Python模块的配置文件只有一个：/opt/gc/zy/etc/*.conf，Python模块有：gc-zy-mod-filesystem，gc-zy-mod-processes，gc-zy-mod-network-address
+<div class="paragraph">
+<p>如果系统是 <code>Ubuntu22.04</code> ，请使用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> sudo curl -o /usr/share/keyrings/GC_ZHIYAN_REPO_UBUNTU.pub 'https://packages.cdgeekcamp.com/zhiyan/ubuntu/GC_ZHIYAN_REPO_UBUNTU.pub'</pre>
+</div>
+</div>
 </td>
 </tr>
 </table>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>zhiyan-module日志文件路径：</p>
+<p><code>Ubuntu16.04</code> 系统和  <code>Ubuntu18.04</code> 系统请先下载 <code>ca</code> 证书：</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>/var/log/zy/*.log</pre>
+<pre>sudo apt install -y ca-certificates</pre>
 </div>
 </div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_ubuntu16_04_repository">2.1.2. Install Ubuntu16.04 Repository</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">wget https://packages.cdgeekcamp.com/zhiyan/ubuntu/16.04/pool/main/g/gc-zy-release-16.04-latest.deb --no-check-certificate&amp;&amp; sudo dpkg -i gc-zy-release-16.04-latest.deb</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_ubuntu18_04_repository">2.1.3. Install Ubuntu18.04 Repository</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">wget https://packages.cdgeekcamp.com/zhiyan/ubuntu/18.04/pool/main/g/gc-zy-release-18.04-latest.deb &amp;&amp; sudo dpkg -i gc-zy-release-18.04-latest.deb</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_ubuntu22_04_repository">2.1.4. Install Ubuntu22.04 Repository</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">wget https://packages.cdgeekcamp.com/zhiyan/ubuntu/22.04/pool/main/g/gc-zy-release-22.04-latest.deb &amp;&amp; sudo dpkg -i gc-zy-release-22.04-latest.deb</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_更新仓库索引">2.1.5. 更新仓库索引</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo apt update</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>zhiyan-module配置文件路径：</p>
+<p>若是 <code>Ubuntu16.04</code> 的系统 在 <code>update</code> 过程中出现此报错：</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>/opt/gc/zy/etc/*.conf
-/opt/gc/zy/etc/*.log.yaml</pre>
+<pre>server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>请执行以下操作：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo apt install -y libgnutls30 apt-transport-https ca-certificates
+sudo apt purge libappstream3
+sudo apt update</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_安装智眼_2">2.2. 安装智眼</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Ubuntu16.04 仓库设置请看这里，请查看  <a href="#_install_ubuntu16_04_repository">Install Ubuntu16.04 Repository</a></p>
+</div>
+<div class="paragraph">
+<p>Ubuntu18.04 仓库设置请看这里，请查看  <a href="#_install_ubuntu18_04_repository">Install Ubuntu18.04 Repository</a></p>
+</div>
+<div class="paragraph">
+<p>Ubuntu22.04 仓库设置请看这里，请查看  <a href="#_install_ubuntu22_04_repository">Install Ubuntu22.04 Repository</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_服务端组_2">2.2.1. 服务端组</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo apt install zhiyan-server</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_客户端组_2">2.2.2. 客户端组</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo apt install zhiyan-agent</code></pre>
 </div>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_使用_2">2.3. 使用</h3>
+<div class="sect3">
+<h4 id="_运行智眼脚本_2">2.3.1. 运行智眼脚本</h4>
+<div class="paragraph">
+<p>获取服务端 <code>token</code> ：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo bash /opt/gc/zy/bin/gc-zy-server-init 0.0.0.0</code></pre>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_ubuntu16_04">3. Ubuntu16.04</h2>
-<div class="sectionbody">
+<div class="paragraph">
+<p>将从服务端获取的 <code>token</code> 填入客户端：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo bash /opt/gc/zy/bin/gc-zy-agent-init token</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>启动智眼模块：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">sudo bash /opt/gc/zy/bin/gc-zy-start</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_访问网页_2">2.3.2. 访问网页</h4>
+<div class="listingblock">
+<div class="content">
+<pre>http://localhost:6222</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>默认帐号密码：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>帐号：admin
 
+密码：zhiyan</pre>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_ubuntu18_04">4. Ubuntu18.04</h2>
-<div class="sectionbody">
-
 </div>
 </div>
-<div class="sect1">
-<h2 id="_ubuntu22_04">5. Ubuntu22.04</h2>
-<div class="sectionbody">
-
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-08-05 17:33:54 +0800
+Last updated 2022-09-01 15:23:43 +0800
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
